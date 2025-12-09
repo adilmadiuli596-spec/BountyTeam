@@ -1,0 +1,132 @@
+const translationsPregnancy = {
+    ru: {
+        page_title: "Беременность - AI-ассистент",
+        home: "Главная",
+        pregnancy: "Беременность",
+        care: "Уход",
+        development: "Развитие",
+        nutrition: "Питание",
+        articles: "Статьи",
+        chatbot: "Перейти в CHATBOT",
+        header_title: "Беременность",
+        header_subtitle: "Все, что нужно знать на каждом этапе беременности: здоровье мамы, развитие малыша и полезные советы.",
+        first_trimester_title: "Первый триместр (1-12 недель)",
+        first_trimester_what_happens_title: "Что происходит:",
+        first_trimester_what_happens_text: "Развитие эмбриона, формирование органов, возможны токсикоз и усталость.",
+        first_trimester_tips_title: "Советы:",
+        first_trimester_tip1: "Регулярно посещайте врача",
+        first_trimester_tip2: "Правильное питание и витамины",
+        first_trimester_tip3: "Избегать стрессов и вредных привычек",
+        second_trimester_title: "Второй триместр (13-26 недель)",
+        second_trimester_what_happens_title: "Что происходит:",
+        second_trimester_what_happens_text: "Рост малыша, уменьшение токсикоза, формирование привычек сна у мамы.",
+        second_trimester_tips_title: "Советы:",
+        second_trimester_tip1: "Лёгкие физические нагрузки",
+        second_trimester_tip2: "Контроль веса",
+        second_trimester_tip3: "Регулярное УЗИ",
+        third_trimester_title: "Третий триместр (27-40 недель)",
+        third_trimester_what_happens_title: "Что происходит:",
+        third_trimester_what_happens_text: "Активный рост плода, подготовка организма к родам, возможна усталость и отёки.",
+        third_trimester_tips_title: "Советы:",
+        third_trimester_tip1: "Следить за питанием и водным балансом",
+        third_trimester_tip2: "Подготовка к родам и госпиталю",
+        third_trimester_tip3: "Регулярные визиты к врачу",
+        disclaimer: "Дисклеймер: Важно! Ассистент не заменяет консультацию врача-педиатра. В экстренных случаях обращайтесь за медицинской помощью.",
+        creators_title: "Создатели-Студенты Колледжа информационных технологий",
+        creator1: "Дильмагамбетов Нурсултан-БКЕ-224",
+        creator2: "МадиҰлы Әділ-БКЕ-224",
+        creator3: "Кабыкен Жанибек-ПО-234"
+    },
+    en: {
+        page_title: "Pregnancy - AI Assistant",
+        home: "Home",
+        pregnancy: "Pregnancy",
+        care: "Care",
+        development: "Development",
+        nutrition: "Nutrition",
+        articles: "Articles",
+        chatbot: "Go to CHATBOT",
+        header_title: "Pregnancy",
+        header_subtitle: "Everything you need to know at each stage of pregnancy: mother's health, baby's development, and useful tips.",
+        first_trimester_title: "First Trimester (1-12 weeks)",
+        first_trimester_what_happens_title: "What happens:",
+        first_trimester_what_happens_text: "Embryo development, organ formation, possible nausea and fatigue.",
+        first_trimester_tips_title: "Tips:",
+        first_trimester_tip1: "Regularly visit your doctor",
+        first_trimester_tip2: "Proper nutrition and vitamins",
+        first_trimester_tip3: "Avoid stress and harmful habits",
+        second_trimester_title: "Second Trimester (13-26 weeks)",
+        second_trimester_what_happens_title: "What happens:",
+        second_trimester_what_happens_text: "Baby growth, reduced nausea, formation of mother's sleep habits.",
+        second_trimester_tips_title: "Tips:",
+        second_trimester_tip1: "Light physical activity",
+        second_trimester_tip2: "Weight control",
+        second_trimester_tip3: "Regular ultrasound",
+        third_trimester_title: "Third Trimester (27-40 weeks)",
+        third_trimester_what_happens_title: "What happens:",
+        third_trimester_what_happens_text: "Active fetal growth, preparation for birth, possible fatigue and swelling.",
+        third_trimester_tips_title: "Tips:",
+        third_trimester_tip1: "Monitor nutrition and hydration",
+        third_trimester_tip2: "Prepare for delivery and hospital",
+        third_trimester_tip3: "Regular doctor visits",
+        disclaimer: "Disclaimer: AI assistant does not replace a pediatrician consultation. Seek medical help in emergencies.",
+        creators_title: "Creators - Students of College of Information Technologies",
+        creator1: "Dilmagambetov Nursultan-BKE-224",
+        creator2: "Madiuly Adil-BKE-224",
+        creator3: "Kabyken Zhanibek-PO-234"
+    },
+    kaz: {
+        page_title: "Жүктілік - AI көмекші",
+        home: "Басты бет",
+        pregnancy: "Жүктілік",
+        care: "Күтім",
+        development: "Даму",
+        nutrition: "Тамақтану",
+        articles: "Мақалалар",
+        chatbot: "CHATBOT-қа өту",
+        header_title: "Жүктілік",
+        header_subtitle: "Балаға күтім жасау үшін пайдалы кеңестер: ана денсаулығы, бала дамуы және пайдалы кеңестер.",
+        first_trimester_title: "Бірінші триместр (1-12 апта)",
+        first_trimester_what_happens_title: "Не болады:",
+        first_trimester_what_happens_text: "Эмбрионның дамуы, органдардың қалыптасуы, мүмкін құсу және шаршау.",
+        first_trimester_tips_title: "Кеңестер:",
+        first_trimester_tip1: "Дәрігерге тұрақты барып тұрыңыз",
+        first_trimester_tip2: "Дұрыс тамақтану және витаминдер",
+        first_trimester_tip3: "Стресстен және зиянды әдеттерден аулақ болыңыз",
+        second_trimester_title: "Екінші триместр (13-26 апта)",
+        second_trimester_what_happens_title: "Не болады:",
+        second_trimester_what_happens_text: "Бала өсуі, құсу азаюы, ананың ұйқы дағдылары қалыптасады.",
+        second_trimester_tips_title: "Кеңестер:",
+        second_trimester_tip1: "Жеңіл физикалық жаттығулар",
+        second_trimester_tip2: "Салмақ бақылауы",
+        second_trimester_tip3: "Тұрақты УДЗ",
+        third_trimester_title: "Үшінші триместр (27-40 апта)",
+        third_trimester_what_happens_title: "Не болады:",
+        third_trimester_what_happens_text: "Жүктіліктің соңғы кезеңі, бала тез өседі, шаршау және ісіну мүмкін.",
+        third_trimester_tips_title: "Кеңестер:",
+        third_trimester_tip1: "Тамақтану мен суды қадағалау",
+        third_trimester_tip2: "Тууға және ауруханаға дайындық",
+        third_trimester_tip3: "Дәрігерге тұрақты барып тұру",
+        disclaimer: "Ескерту: AI көмекші педиатр дәрігердің кеңесін алмастыра алмайды. Төтенше жағдайда медициналық көмекке жүгініңіз.",
+        creators_title: "Жасалғандар - Ақпараттық технологиялар колледжінің студенттері",
+        creator1: "Дильмагамбетов Нурсултан-БКЕ-224",
+        creator2: "МадиҰлы Әділ-БКЕ-224",
+        creator3: "Қабыкен Жанибек-ПО-234"
+    }
+};
+
+function setLanguage(lang) {
+    document.querySelectorAll("[data-key]").forEach(el => {
+        const key = el.getAttribute("data-key");
+        if (translationsPregnancy[lang] && translationsPregnancy[lang][key] !== undefined) {
+            el.textContent = translationsPregnancy[lang][key];
+        }
+    });
+    document.title = translationsPregnancy[lang]["page_title"];
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("ru").addEventListener("click", () => setLanguage("ru"));
+    document.getElementById("en").addEventListener("click", () => setLanguage("en"));
+    document.getElementById("kaz").addEventListener("click", () => setLanguage("kaz"));
+});

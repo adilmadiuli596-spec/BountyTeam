@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #F7F7F7;
+    padding-top: 100px;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15; 
+    margin: 0;
+}
+img, picture, video, canvas, svg {
+    display: block; 
+    max-width: 100%;
+}
+a {
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    color: #34495E;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(0, 0, 0);
+    color: #34495E;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #A8D0E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 100px;
+    flex-wrap: wrap;
+}
+
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.menu_list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu_item a {
+    font-size: 18px;
+    color: #34495E;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu_item a:hover {
+    color: #FF6B6B;
+}
+
+.ai {
+    font-size: 18px;
+    padding: 8px 15px;
+    background-color: #FF6B6B;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ai:hover {
+    background-color: #FF8C66;
+    color: #fff;
+}
+
+.header_bottom {
+    display: flex;
+    justify-content: center;
+    background-color: #fff2c3;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 60vh;
+}
+
+.header_title {
+    font-size: 48px;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.header_subtitle {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.header_btnbox{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_btnbox .btn_chat {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: #FF6B6B;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.header_btnbox .btn_chat:hover {
+    background-color: #FF8C66;
+}
+.btn_chat:hover {
+    color: chartreuse;
+    transition: 0.3s;
+}
+
+.about {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about_title {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #34495E;
+}
+
+.about_boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.about_box_name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.about_box_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #34495E;
+}
+
+.about_box_subtitle {
+    font-size: 14px;
+    color: #2C3E50;
+}
+.about_box {
+    background-color: #B8E0D2;
+    border-radius: 20px;
+    padding: 30px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+     transition: 
+        transform 0.45s cubic-bezier(.22,1,.36,1),
+        box-shadow 0.45s cubic-bezier(.22,1,.36,1);
+}
+.about_box:hover {
+    transition: transform 0.3s cubic-bezier(.175,.885,.32,1.275), 
+                box-shadow 0.3s ease;
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+}
+.how {
+    background-color: #F7F7F7;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.how_title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #34495E;
+}
+
+.how_title_subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2C3E50;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+
+.footer {
+    background-color: #A8D0E6;
+    padding: 50px 0;
+    text-align: center;
+    color: #2C3E50;
+}
+
+.footer_title {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.footer_box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer_name {
+    font-size: 20px;
+    color: #2C3E50;
+}
+.names {
+    font-size: 20px;
+    color: black;
+}
+.btn_chat {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF6B6B;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.btn_chat1 {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF6B6B;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.btn_chat:hover {
+    background-color: #FF8C66;
+    color: #fff;
+    transition: 0.3s;
+}
+.trimester {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.section_title {
+    font-size: 36px;
+    color: #34495E;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.trimester_box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trimester_img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.trimester_text {
+    max-width: 500px;
+}
+
+.trimester_text h3 {
+    font-size: 20px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.trimester_text p, .trimester_text ul {
+    font-size: 16px;
+    color: #34495E;
+    line-height: 1.6;
+}
+
+.trimester_text ul {
+    padding-left: 20px;
+}
+
+
+.care {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.section_title {
+    font-size: 36px;
+    text-align: center;
+    color: #34495E;
+    margin-bottom: 40px;
+}
+
+.care_box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.care_img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.care_text {
+    max-width: 500px;
+    font-size: 16px;
+    color: #34495E;
+    line-height: 1.6;
+}
+
+
+.development {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.section_title {
+    font-size: 36px;
+    color: #34495E;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.development_box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.development_img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.development_text {
+    max-width: 500px;
+    font-size: 16px;
+    color: #34495E;
+    line-height: 1.6;
+}
+
+.nutrition {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.section_title {
+    font-size: 36px;
+    color: #34495E;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.nutrition_box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.nutrition_img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.nutrition_text {
+    max-width: 500px;
+    font-size: 16px;
+    color: #34495E;
+    line-height: 1.6;
+}
+.articles {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.articles_box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.article_card {
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.article_card:hover {
+    transform: translateY(-5px);
+}
+
+.article_img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.article_title {
+    font-size: 20px;
+    color: #34495E;
+    margin-bottom: 10px;
+}
+
+.article_desc {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.article_link {
+    font-size: 16px;
+    color: #FF6B6B;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.article_link:hover {
+    color: #FF8C66;
+}
+.language {
+    font-size: 18px;
+    padding: 20px 25px;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.rus {
+    background-color: #FF6B6B;
+    border-radius: 5px;
+    color: #B8E0D2;
+    border: none;
+}
+.rus:hover {
+    background-color: #ff9292;
+    color: #00ffa6;
+}
+@media (max-width: 1024px) {
+    .header_top {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 15px;
+    }
+    .header_title {
+        font-size: 40px;
+    }
+    .header_subtitle {
+        font-size: 16px;
+        max-width: 700px;
+    }
+    .menu_list {
+        gap: 15px;
+    }
+    .menu_item a, .ai {
+        font-size: 16px;
+    }
+    .trimester_box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .trimester_text {
+        max-width: 100%;
+    }
+    .care_box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .care_text {
+        max-width: 100%;
+    }
+    .development_box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .development_text {
+        max-width: 100%;
+    }
+    .nutrition_box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nutrition_text {
+        max-width: 100%;
+    }
+    .articles_box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article_card {
+        max-width: 90%;
+    }
+    body {
+        padding-top: 0;
+    }
+    .header_title {
+        font-size: 40px;
+    }
+    .header_subtitle {
+        font-size: 16px;
+        max-width: 700px;
+    }
+    .menu_list {
+        gap: 15px;
+    }
+    .menu_item a, .ai {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_top {
+        position: static;
+    }
+    .menu_list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .header_bottom {
+        padding: 40px 15px;
+    }
+    .header_btnbox {
+        flex-direction: column;
+        gap: 15px;
+    }
+    body {
+        padding-top: 0;
+    }
+    .header_top {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+    .menu_list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .header_bottom {
+        padding: 40px 15px;
+    }
+    .header_btnbox {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
